@@ -17,7 +17,8 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   
   config.vm.provider "virtualbox" do |vb|
-    # vb.memory 1042
+    vb.memory = 1042
+    # vb.cpus = 2 # Doesnt work on my host without doing some stuff.
   end
 
 
